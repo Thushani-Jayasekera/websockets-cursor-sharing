@@ -14,7 +14,7 @@
     };
         
     async function connectToServer() {    
-        const ws = new WebSocket('ws://localhost:7071/ws');
+        const ws = new WebSocket('wss://61fc25eb-66b2-4f09-8b21-68fee9e0e03f-dev.e1-us-east-azure.choreoapis.dev/mediationproject/cursorapi/v1.0/ws');
         return new Promise((resolve, reject) => {
             const timer = setInterval(() => {
                 if(ws.readyState === 1) {
